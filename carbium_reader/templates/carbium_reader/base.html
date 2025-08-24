@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CARBIUM</title>
+  <link rel="stylesheet" href="{% static 'carbium_reader/css/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>📖 CARBIUM EPUB Reader</h1>
+    <nav>
+      <a href="{% url 'carbium_reader:index' %}">Home</a> |
+      <a href="{% url 'carbium_reader:upload' %}">Upload</a>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
